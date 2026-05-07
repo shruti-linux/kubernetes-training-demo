@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: rs-equity
+  namespace: dev
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      release: alpha
+  template:
+    metadata:
+      labels:
+        release: alpha
+    spec:
+      containers:
+      - name: xyz
+        image: quay.io/shruti1988/webapp
+                                     
