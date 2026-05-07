@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod5-joel
+spec:
+  containers:
+  - name: cont1
+    image: nginx
+ 
+
